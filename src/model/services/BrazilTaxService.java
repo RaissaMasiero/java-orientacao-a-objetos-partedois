@@ -1,6 +1,8 @@
 package model.services;
 
-public class BrazilTaxService implements TaxService{
+import model.interfaces.TaxService;
+
+public class BrazilTaxService implements TaxService {
 
     public Double imposto(double valor){
         if(valor <= 100.0){

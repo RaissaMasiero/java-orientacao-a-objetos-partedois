@@ -1,7 +1,7 @@
 package model.entities;
 
-import model.services.Printer;
-import model.services.Scanner;
+import model.interfaces.Printer;
+import model.interfaces.Scanner;
 
 public class ComboDevice extends Device implements Scanner, Printer {
 

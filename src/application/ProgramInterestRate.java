@@ -1,8 +1,7 @@
 package application;
 
 import model.services.BrazilInterestService;
-import model.services.InterestService;
-import model.services.UsaInterestService;
+import model.interfaces.InterestService;
 
 import java.util.Locale;
 import java.util.Scanner;

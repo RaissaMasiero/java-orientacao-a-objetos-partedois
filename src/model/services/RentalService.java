@@ -2,6 +2,7 @@ package model.services;
 
 import model.entities.CarRental;
 import model.entities.Invoice;
+import model.interfaces.TaxService;
 
 import java.time.Duration;
 

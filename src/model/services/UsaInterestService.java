@@ -1,6 +1,8 @@
 package model.services;
 
-public class UsaInterestService implements InterestService{
+import model.interfaces.InterestService;
+
+public class UsaInterestService implements InterestService {
 
     private double jurosEmprestimo;
 

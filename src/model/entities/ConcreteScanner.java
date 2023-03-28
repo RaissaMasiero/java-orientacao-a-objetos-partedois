@@ -1,6 +1,6 @@
 package model.entities;
 
-import model.services.Scanner;
+import model.interfaces.Scanner;
 
 public class ConcreteScanner extends Device implements Scanner {
 

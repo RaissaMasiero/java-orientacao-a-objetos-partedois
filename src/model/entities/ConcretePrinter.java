@@ -1,6 +1,6 @@
 package model.entities;
 
-import model.services.Printer;
+import model.interfaces.Printer;
 
 public class ConcretePrinter extends Device implements Printer {
 

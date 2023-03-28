@@ -2,6 +2,7 @@ package model.services;
 
 import model.entities.Contract;
 import model.entities.Installment;
+import model.interfaces.OnlinePaymentService;
 
 import java.time.LocalDate;
 

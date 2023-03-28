@@ -1,6 +1,8 @@
 package model.services;
 
-public class PaypalService implements OnlinePaymentService{
+import model.interfaces.OnlinePaymentService;
+
+public class PaypalService implements OnlinePaymentService {
 
     @Override
     public double taxaPagamento(double valor) {

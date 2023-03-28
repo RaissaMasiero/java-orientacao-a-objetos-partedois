@@ -1,4 +1,4 @@
-package model.services;
+package model.interfaces;
 
 public interface Printer {
 
