@@ -43,6 +43,7 @@ public class ProgramSet {
 
         System.out.println("--------------------------------------------------------");
 
+        // como set testa igualdade
         Set<Product> set1 = new HashSet<>();
 
         set1.add(new Product("TV", 900.0));
@@ -52,5 +53,17 @@ public class ProgramSet {
         Product prod = new Product("Notebook", 1200.0);
 
         System.out.println(set1.contains(prod));
+
+        System.out.println("--------------------------------------------------------");
+
+        Set<Product> set2 = new TreeSet<>();
+
+        set2.add(new Product("TV", 900.0));
+        set2.add(new Product("Notebook", 1200.0));
+        set2.add(new Product("Tablet", 400.0));
+
+        for (Product p : set2) {
+            System.out.println(p);
+        }
     }
 }
