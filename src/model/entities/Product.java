@@ -26,12 +26,8 @@ public class Product implements Comparable<Product>{
         this.preco = preco;
     }
 
-    public static boolean predicadoDeProdutoEstatico(Product p){ // trabalha com produto passado como argumento
-        return p.getPreco() >= 100.0;
-    }
-
-    public boolean predicadoDeProdutoNaoEstatico(){ // trabalha com o próprio objeto
-        return preco >= 100.0;
+    public static void atualizaPrecoEstatico(Product p){
+        p.setPreco(p.getPreco() * 1.1);
     }
 
     @Override
