@@ -20,7 +20,7 @@ public class ProgramConsumer {
         list.add(new Product("Tablet", 350.50));
         list.add(new Product("HD Case", 80.90));
 
-        list.forEach(Product::atualizaPrecoEstatico);
+        list.forEach(Product::atualizaPrecoNaoEstatico);
 
         list.forEach(System.out::println); // referência para o método println
     }

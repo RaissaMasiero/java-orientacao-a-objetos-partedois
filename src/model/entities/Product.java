@@ -30,6 +30,10 @@ public class Product implements Comparable<Product>{
         p.setPreco(p.getPreco() * 1.1);
     }
 
+    public void atualizaPrecoNaoEstatico(){
+        preco = preco * 1.1;
+    }
+
     @Override
     public String toString() {
         return nome + ", " + String.format("%.2f", preco);
