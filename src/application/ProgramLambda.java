@@ -21,9 +21,9 @@ public class ProgramLambda {
         list.add(new Product("Tablet", 350.50));
         list.add(new Product("HD Case", 80.90));
 
-        Predicate<Product> predicate = p -> p.getPreco() >= 100.0;
+        double min = 100.0;
         
-        list.removeIf(predicate);
+        list.removeIf(p -> p.getPreco() >= min);
 
         for (Product p : list) {
             System.out.println(p);
