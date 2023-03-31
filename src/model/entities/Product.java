@@ -26,6 +26,10 @@ public class Product implements Comparable<Product>{
         this.preco = preco;
     }
 
+    public static boolean predicadoDeProdutoEstatico(Product p){
+        return p.getPreco() >= 100.0;
+    }
+
     @Override
     public String toString() {
         return nome + ", " + String.format("%.2f", preco);
