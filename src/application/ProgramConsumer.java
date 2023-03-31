@@ -23,9 +23,7 @@ public class ProgramConsumer {
 
         double porcento = 1.1;
 
-        Consumer<Product> c = p -> p.setPreco(p.getPreco() * porcento);
-
-        list.forEach(c);
+        list.forEach(p -> p.setPreco(p.getPreco() * porcento));
 
         list.forEach(System.out::println); // referência para o método println
     }
