@@ -19,7 +19,7 @@ public class ProgramLambda {
         list.add(new Product("Tablet", 350.50));
         list.add(new Product("HD Case", 80.90));
         
-        list.removeIf(Product::predicadoDeProdutoEstatico); // referência pra método
+        list.removeIf(Product::predicadoDeProdutoNaoEstatico); // referência pra método
 
         for (Product p : list) {
             System.out.println(p);
