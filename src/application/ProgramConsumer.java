@@ -6,6 +6,7 @@ import util.PriceUpdate;
 import java.util.Locale;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class ProgramConsumer {
 
@@ -20,7 +21,11 @@ public class ProgramConsumer {
         list.add(new Product("Tablet", 350.50));
         list.add(new Product("HD Case", 80.90));
 
-        list.forEach(Product::atualizaPrecoNaoEstatico);
+        double porcento = 1.1;
+
+        Consumer<Product> c = p -> p.setPreco(p.getPreco() * porcento);
+
+        list.forEach(c);
 
         list.forEach(System.out::println); // referência para o método println
     }
