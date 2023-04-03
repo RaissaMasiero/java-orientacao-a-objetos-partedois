@@ -22,10 +22,8 @@ public class ProgramFunction {
         list.add(new Product("Tablet", 350.50));
         list.add(new Product("HD Case", 80.90));
 
-        Function<Product, String> function = p -> p.getNome().toUpperCase();
-
-        // função map: aplica uma função a cada elemento da stream, gerando uma nova stream com os elementoos transformados.
-        List<String> nomes = list.stream().map(function).collect(Collectors.toList());
+        // função map: aplica uma função a cada elemento da stream, gerando uma nova stream com os elementos transformados.
+        List<String> nomes = list.stream().map(p -> p.getNome().toUpperCase()).collect(Collectors.toList());
 
         nomes.forEach(System.out::println);
     }
