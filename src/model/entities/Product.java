@@ -26,12 +26,8 @@ public class Product implements Comparable<Product>{
         this.preco = preco;
     }
 
-    public static void atualizaPrecoEstatico(Product p){
-        p.setPreco(p.getPreco() * 1.1);
-    }
-
-    public void atualizaPrecoNaoEstatico(){
-        preco = preco * 1.1;
+    public static String nomeUpperCaseEstatico(Product p){
+        return p.getNome().toUpperCase();
     }
 
     @Override
