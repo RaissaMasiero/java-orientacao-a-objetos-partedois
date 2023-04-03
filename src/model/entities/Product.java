@@ -30,6 +30,10 @@ public class Product implements Comparable<Product>{
         return p.getNome().toUpperCase();
     }
 
+    public String nomeUpperCaseNaoEstatico(){
+        return nome.toUpperCase();
+    }
+
     @Override
     public String toString() {
         return nome + ", " + String.format("%.2f", preco);

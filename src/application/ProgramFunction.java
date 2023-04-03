@@ -22,7 +22,7 @@ public class ProgramFunction {
         list.add(new Product("HD Case", 80.90));
 
         // função map: aplica uma função a cada elemento da stream, gerando uma nova stream com os elementoos transformados.
-        List<String> nomes = list.stream().map(Product::nomeUpperCaseEstatico).collect(Collectors.toList());
+        List<String> nomes = list.stream().map(Product::nomeUpperCaseNaoEstatico).collect(Collectors.toList());
 
         nomes.forEach(System.out::println);
     }
